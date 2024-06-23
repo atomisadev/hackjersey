@@ -42,7 +42,7 @@ const questions: { question: string; answer: string }[] = [
 export default function Faq() {
   return (
     <>
-      <div className="w-4/5 flex flex-col justify-center items-center mt-24">
+      <div className="w-full flex flex-col justify-center items-center mt-24">
         <motion.h1
           whileHover={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
@@ -53,7 +53,7 @@ export default function Faq() {
         <Accordion
           type="single"
           collapsible
-          className="text-xl text-white/90 w-3/5"
+          className="text-xl text-white/90 mx-4 md:w-3/5"
         >
           {questions.map((q, index) => (
             <AccordionItem value={`item-${index}`} key={index}>

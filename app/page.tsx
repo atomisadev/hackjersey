@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <main className="text-[#EEE] bg-y-repeat bg-[#000F16] min-h-screen relative">
         <div className="absolute top-0 left-0">
-          <a className="fixed" href="https://hackclub.com/">
+          <a href="https://hackclub.com/">
             <img
               src="/hack.png"
               className="w-[10rem] md:w-[15rem]"

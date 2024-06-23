@@ -4,7 +4,7 @@ import { GeistSans } from "geist/font/sans";
 export default function Vision() {
   return (
     <>
-      <div className="mt-24 mx-4 w-2/3 lg:mx-auto lg:w-[85rem]">
+      <div className="mt-24 mx-1 md:w-2/3 md:mx-4 lg:mx-auto lg:w-[85rem]">
         <motion.h1
           whileHover={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
