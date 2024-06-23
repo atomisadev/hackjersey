@@ -21,7 +21,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Alexander Masin",
-    role: "Logistics and Operations Lead",
+    role: "Logistics Lead",
     image: "/team/ALEXANDER_MASIN.jpg",
   },
   {
@@ -54,6 +54,7 @@ export default function Team() {
             key={member.name}
             onHoverStart={() => setHoveredMember(member)}
             onHoverEnd={() => setHoveredMember(null)}
+            className="flex flex-col items-center space-y-2"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
@@ -65,6 +66,10 @@ export default function Team() {
                 objectFit="cover"
                 className="rounded-full"
               />
+            </div>
+            <div className="flex flex-col items-center">
+              <p>{member.name}</p>
+              <p className="text-xs uppercase text-white/50">{member.role}</p>
             </div>
           </motion.div>
         ))}
