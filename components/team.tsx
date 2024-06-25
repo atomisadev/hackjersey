@@ -29,6 +29,11 @@ const teamMembers: TeamMember[] = [
     role: "Marketing Lead",
     image: "/team/AYUSHMAAN_MUKHERJEE.webp",
   },
+  {
+    name: "Abdullah Kamran",
+    role: "Operations Lead",
+    image: "/team/ABDULLAH_KAMRAN.jpg",
+  },
 ];
 
 export default function Team() {
@@ -48,7 +53,7 @@ export default function Team() {
           ? `${hoveredMember.name} (${hoveredMember.role})`
           : "Organizing Team"}
       </p>
-      <div className="grid grid-cols-1 gap-4 items-center justify-center md:gap-none md:grid-cols-4">
+      <div className="grid grid-cols-1 gap-4 items-center justify-center md:gap-none md:grid-cols-5">
         {teamMembers.map((member, index) => (
           <motion.div
             key={member.name}
