@@ -21,7 +21,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Alexander Masin",
-    role: "Operations Lead",
+    role: "Logistics Lead",
     image: "/team/ALEXANDER_MASIN.jpg",
   },
   {
@@ -31,7 +31,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Abdullah Kamran",
-    role: "Logistics Lead",
+    role: "Operations Lead",
     image: "/team/ABDULLAH_KAMRAN.jpg",
   },
 ];
