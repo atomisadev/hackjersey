@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Github, Heart, Instagram } from "lucide-react";
 import { Be_Vietnam_Pro } from "next/font/google";
 import { GenXYZ } from "@/components/companies/gen-xyz";
 import { Balsamiq } from "@/components/companies/balsamiq";
@@ -299,7 +299,7 @@ export default function Home() {
             </h1>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 justify-items-center">
             {[
               {
                 title: "Our Legal Status",
@@ -332,11 +332,42 @@ export default function Home() {
       <footer className="bg-[#005EFF] py-8">
         <div className="container mx-auto px-4">
           <p
-            className={`${BeVietnamProFont.className} text-white text-center text-xl`}
+            className={`${GeistSans.className} text-white text-center font-medium text-xl mb-4`}
           >
             Copyright ©️ hackJersey 2024. A 501(c)(3) nonprofit organization,
             fiscally sponsored by The Hack Foundation.
           </p>
+          <div className="flex flex-col items-center justify-center space-y-4">
+            <p
+              className={`${GeistSans.className} text-white text-center text-lg flex items-center`}
+            >
+              Website designed & built with{" "}
+              <Heart className="mx-1 text-red-500" size={20} /> by Mohit
+              Srinivasan
+            </p>
+            <div className="flex space-x-4">
+              <a
+                href="https://github.com/hackjersey-Hackathon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github
+                  className="text-white hover:text-gray-300 transition-colors"
+                  size={24}
+                />
+              </a>
+              <a
+                href="https://instagram.com/hack.jersey"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Instagram
+                  className="text-white hover:text-gray-300 transition-colors"
+                  size={24}
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
