@@ -373,7 +373,9 @@ const AvatarItem = ({ member }: any) => (
 const TextContent = () => (
   <>
     <div>
-      <h1 className="text-black/95 tracking-tighter font-semibold text-2xl">
+      <h1
+        className={`${BeVietnamProFont.className} text-black/95 tracking-tighter font-semibold text-2xl`}
+      >
         What do we do?
       </h1>
       <p className={`${GeistSans.className} text-black/90 text-lg mt-2 mb-4`}>
@@ -385,7 +387,9 @@ const TextContent = () => (
     </div>
 
     <div className="mt-5">
-      <h1 className="text-black/95 tracking-tighter font-semibold text-2xl">
+      <h1
+        className={`${BeVietnamProFont.className} text-black/95 tracking-tighter font-semibold text-2xl`}
+      >
         How do we do this?
       </h1>
       <p className={`${GeistSans.className} text-black/90 text-lg mt-2 mb-4`}>
@@ -397,7 +401,9 @@ const TextContent = () => (
     </div>
 
     <div className="mt-5">
-      <h1 className="text-black/95 tracking-tighter font-semibold text-2xl">
+      <h1
+        className={`${BeVietnamProFont.className} text-black/95 tracking-tighter font-semibold text-2xl`}
+      >
         Why do we do this?
       </h1>
       <p className={`${GeistSans.className} text-black/90 text-lg mt-2 mb-4`}>

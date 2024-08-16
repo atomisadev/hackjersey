@@ -1,9 +1,20 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import "./fonts.css";
+// import "./fonts.css";
+import localFont from "next/font/local";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const pixeboy = localFont({
+  src: [
+    {
+      path: "../public/branding/fonts/Pixeboy.ttf",
+      weight: "200",
+    },
+  ],
+  variable: "--font-pixeboy",
+});
 
 export const metadata: Metadata = {
   title: "hackJersey - a high school hackathon in NJ for anyone",
@@ -18,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={pixeboy.className}>{children}</body>
     </html>
   );
 }
