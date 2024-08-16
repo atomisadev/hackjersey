@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Pixeboy";
+  src: url("/public/branding/fonts/Pixeboy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
